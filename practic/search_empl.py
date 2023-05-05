@@ -8,7 +8,6 @@ from selenium.webdriver.support import expected_conditions, wait
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
-
 def login(browser, user='admin', password='password'):
     browser.find_element(By.ID, 'txtUsername').send_keys(user)
     browser.find_element(By.ID, 'txtPassword').send_keys(password)
