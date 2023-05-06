@@ -31,7 +31,6 @@ class MyTestCase(unittest.TestCase):
         self.assertIn('/pim/viewEmployeeList', browser.current_url)
         welcome_message = get_greeting(browser)
         self.assertEqual('Welcome Admin', welcome_message)  # add assertion here
-
         #browser.find_element(By.ID, 'empsearch_job_title').click()
         #browser.find_element(By.CSS_SELECTOR, '#empsearch_job_title > option:nth-child(8)').click()
 
