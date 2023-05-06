@@ -29,7 +29,6 @@ class MyTestCase(unittest.TestCase):
         login(browser)
 
         self.assertIn('/pim/viewEmployeeList', browser.current_url)
-
         welcome_message = get_greeting(browser)
         self.assertEqual('Welcome Admin', welcome_message)  # add assertion here
 
